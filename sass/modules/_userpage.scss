@@ -1,0 +1,29 @@
+.users-container {
+    margin-top: 100px;
+
+    h2 {
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 30px;
+
+    }
+    
+    .userBox {
+        display: flex;
+        justify-content: center;
+        column-gap: 80px;
+        
+        div {
+            
+            background-color: grey;
+            padding: 10px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgb(136, 121, 156);
+
+            }
+        }
+    }
+    
+}
