@@ -6,15 +6,13 @@ export default {
     <section id="home-page">
       <div id="hero">
         <div id="middle-logo">
-          <img src="images/logo_flash.png" alt="mainlogo">
           <h2>FILMS</h2>
         </div>
       </div>
 
       <div id="recs">
         <ol>
-          <li @click="setDecade(1950, 1959)">50s</li>
-          <li @click="setDecade(1960, 1969)">60s</li>
+          <li @click="setDecade(1980, 1990)" class="recommend">Recommended</li>
           <li @click="setDecade(1970, 1979)">70s</li>
           <li @click="setDecade(1980, 1989)">80s</li>
           <li @click="setDecade(1990, 1999)">90s</li>
@@ -44,7 +42,7 @@ export default {
   created() {
     // fetch the appropriate video from the IMDBs API
     // and load it into your view -> check video on FOL
-    this.setDecade(1970, 1979);
+    this.setDecade(1980, 1990);
   },
 
   methods: {
