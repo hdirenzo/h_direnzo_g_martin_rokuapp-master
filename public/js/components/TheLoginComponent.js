@@ -3,7 +3,7 @@ export default {
 
     template: `
     <section class="container">
-        <div class="jumbotron">
+        <div class="login">
             <h1>Welcome to Flashblack!</h1>
             <p class="lead">
             Before revisiting your favourite movies, tv shows or music from yesteryear, please log in with a valid username and password.

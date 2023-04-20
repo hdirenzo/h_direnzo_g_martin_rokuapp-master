@@ -5,7 +5,7 @@ export default {
     template: `
     <div @click="NavToHome">
         <div class="card-body text-center">
-            <img :src='"images/" + user.avatar' class="rounded-circle img-fluid" alt="user avatar">
+            <img :src='"images/" + user.avatar' class="" alt="user avatar">
             <p>{{user.username}}</p>
         </div>
     </div>

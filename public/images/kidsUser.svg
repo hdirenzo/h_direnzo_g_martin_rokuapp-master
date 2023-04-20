@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="b" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+  <defs>
+    <style>
+      .d {
+        fill: #231531;
+      }
+
+      .e {
+        fill: #bc9dca;
+      }
+    </style>
+  </defs>
+  <g id="c" data-name="Layer 1">
+    <rect class="e" x="0" y="0" width="240" height="240" rx="119.9999" ry="119.9999"/>
+    <g>
+      <circle class="d" cx="119.6633" cy="80.6374" r="23.5681"/>
+      <rect class="d" x="79.2608" y="110.9393" width="81.4784" height="65.9908" rx="18.8545" ry="18.8545"/>
+    </g>
+  </g>
+</svg>

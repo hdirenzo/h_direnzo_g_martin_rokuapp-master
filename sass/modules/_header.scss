@@ -1,13 +1,18 @@
 header {
-    padding: 20px 100px;
+    padding: 40px 100px;
     display: flex;
     justify-content: space-between;
+
+    img {
+        width: 100px;
+    }
+
 
     nav {
         width: 85%;
         display: flex;
         justify-content: space-between;
-        font-size: 24px;
+        font-size: 18px;
         ul {
             display: flex;
             align-items: center;
@@ -17,12 +22,30 @@ header {
                 margin-right: 40px;
                 text-decoration: none;
                 color: $main-text-color;
+                transition: all 0.2s ease-in-out;
 
+            }
+            a:hover {
+                color: #cc9cf8;
+                transition: all 0.2s ease-in-out; /* add transition property */
+                font-weight: 600;
             }
             li {
                 margin-left: 20px;
             }
         }
+        
+        .icons li {
+            cursor: pointer;
+            font-size: 24px;
+            transition: all 0.2s ease-in-out; /* add transition property */
+          }
+          
+          .icons li:hover {
+            
+            color: #cc9cf8;
+            transition: all 0.2s ease-in-out; /* add transition property */
+          }
 
     }
 }

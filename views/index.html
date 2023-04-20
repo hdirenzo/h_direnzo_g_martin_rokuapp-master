@@ -6,20 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    
     <title>.:Roku Flashback:.</title>
 </head>
-<body>
+<body id="home-page">
     <main id="app">
         <header>
-            <img src="images/roku.svg" alt="Roku logo" width="90">
+            <img src="images/rokuLogo.svg" alt="Roku logo">
             <nav class="float-right">
                 <ul>
                     <a href="">Film</a>
                     <a href="">TV</a>
                     <a href="">Music</a>
                 </ul>
-                <ul v-if="authenticated">
+                <ul v-if="authenticated" class="icons">
                     <li @click="changeUser"><i class="fas fa-user-circle"></i></li>
                     <li><i class="fas fa-cog"></i></li>
                     <li @click="logOut"><i class="fas fa-power-off"></i></li>
@@ -29,6 +33,23 @@
            
         <router-view @setauthenticated="setAuth" @setactive="setCurrentUser" id="main-view" :user="currentUser"></router-view>
     </main>
+    <footer>
+        <div id="socials">
+            <img src="images/img_fb.png" alt="fb">
+            <img src="images/img_twitter.png" alt="twitter">
+            <img src="images/img_insta.png" alt="insta">
+
+        </div>
+        <p>2022 Roku Inc. All Rights Reserved</p>
+        <div id="links">
+            <ul>
+                <li>Privacy Policies</li>
+                <li>Terms and Conditions</li>
+                <li>Careers</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+    </footer>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="https://unpkg.com/vue-router@4"></script>
     <script src="js/main.js" type="module" defer></script>

@@ -1,13 +1,17 @@
 body {
     width: 100vw;
 }
+.hidden {
+    display: none;
+}
 
 #home-page {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: $main-font-family;
     color: white;
 
 
     footer {
+        padding: 2rem 0 2rem;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -75,9 +79,9 @@ body {
 
 
         h2 {
+            font-weight: 700;
 
             font-size: xxx-large;
-            padding-left: 2em;
 
         }
 
@@ -105,7 +109,8 @@ body {
     }
 
     .movieList {
-        ul {            
+        ul {        
+               
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
             column-gap: 3vw;
@@ -113,11 +118,33 @@ body {
             padding: 0 100px;
 
             li {
-                img {                    
-                    width: 100%;
+                cursor: pointer;
+                img {
+                  width: 98%;
+                  transition: all 0.2s ease-in-out; /* add transition property */
                 }
-            }
+                transition: all 0.2s ease-in-out; /* add transition property */
+              }
+              
+              li:hover {
+                font-weight: 800;
+                img {
+                  width: 100%;
+                  transition: all 0.2s ease-in-out; /* add transition property */
+                }
+                transition: all 0.2s ease-in-out; /* add transition property */
+              }
+        }
+
+        p {
+            padding-top: 15px;
         }
         
     }
+
+}
+
+.recommend {
+    font-weight: 400;
+    color: white;
 }
